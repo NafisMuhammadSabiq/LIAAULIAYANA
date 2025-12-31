@@ -50,4 +50,10 @@ canvas {
 .video-btn {
     pointer-events: auto;
 }
+/* Paksa tombol video tetap bisa diklik walau start-anim aktif */
+.start-anim .video-btn {
+    pointer-events: auto !important;
+}
+
+
 
