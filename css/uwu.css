@@ -38,22 +38,30 @@ body {
 .video-btn {
     pointer-events: auto;
 }
-/* ===== INTERAKSI & LAYER ===== */
+/* ===== INTERAKSI & LAYER FINAL ===== */
 
-/* Intro & canvas tidak boleh menangkap klik */
+/* Intro & canvas tidak interaktif */
 .intro,
 .intro *,
 canvas {
     pointer-events: none;
 }
 
-/* Action screen HARUS bisa diklik */
-.action,
+/* Action screen & play button aktif */
+.action {
+    pointer-events: auto;
+}
+
 #play-btn {
     pointer-events: auto;
 }
 
-/* Tombol video selalu aktif */
+/* Override animasi template */
+.start-anim #play-btn {
+    pointer-events: auto !important;
+}
+
+/* Tombol video */
 .video-button-wrapper {
     position: fixed;
     bottom: 40px;
@@ -66,7 +74,6 @@ canvas {
     pointer-events: auto;
 }
 
-/* Override animasi template */
 .start-anim .video-btn {
     pointer-events: auto !important;
 }
