@@ -24,4 +24,17 @@ body {
     font-family: 'walkway_condensedregular';
     letter-spacing: 1px;
     font-size: 1.15rem;
+
+}
+.video-button-wrapper {
+    position: fixed;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999; /* PALING ATAS */
+    pointer-events: auto;
+}
+
+.video-btn {
+    pointer-events: auto;
 }
