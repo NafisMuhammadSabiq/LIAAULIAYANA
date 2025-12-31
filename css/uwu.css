@@ -48,32 +48,34 @@ canvas {
 }
 
 /* Action screen & play button aktif */
-.action {
-    pointer-events: auto;
-}
-
+.action,
 #play-btn {
     pointer-events: auto;
 }
 
-/* Override animasi template */
-.start-anim #play-btn {
-    pointer-events: auto !important;
-}
+/* ============================= */
+/* Tombol Video (Google Drive)   */
+/* ============================= */
 
-/* Tombol video */
+/* SEMBUNYI DI AWAL */
 .video-button-wrapper {
     position: fixed;
     bottom: 40px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) translateY(20px);
     z-index: 9999;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
-.video-btn {
+/* MUNCUL SETELAH START */
+.start-anim .video-button-wrapper {
+    opacity: 1;
+    visibility: visible;
     pointer-events: auto;
-}
-
-.start-anim .video-btn {
-    pointer-events: auto !important;
+    transform: translateX(-50%) translateY(0);
 }
