@@ -38,12 +38,18 @@ body {
 .video-btn {
     pointer-events: auto;
 }
-/* Matikan penangkap klik layer animasi */
-.screen,
-.screen * ,
+/* Hanya intro yang tidak perlu klik */
+.intro,
+.intro * ,
 canvas {
     pointer-events: none;
 }
+
+/* Action screen harus bisa diklik */
+.action {
+    pointer-events: auto;
+}
+
 
 /* Aktifkan klik khusus tombol video */
 .video-button-wrapper,
@@ -54,6 +60,12 @@ canvas {
 .start-anim .video-btn {
     pointer-events: auto !important;
 }
+/* Aktifkan kembali tombol Mulai Sekarang */
+#play-btn {
+    pointer-events: auto;
+}
+
+
 
 
 
