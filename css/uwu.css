@@ -100,3 +100,11 @@ canvas {
         font-size: 0.95rem;
     }
 }
+/* FIX KLIK TOMBOL VIDEO */
+.video-button-wrapper,
+.video-button-wrapper * {
+    pointer-events: auto !important;
+    position: relative;
+    z-index: 2000;
+}
+
