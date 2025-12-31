@@ -38,3 +38,16 @@ body {
 .video-btn {
     pointer-events: auto;
 }
+/* Matikan penangkap klik layer animasi */
+.screen,
+.screen * ,
+canvas {
+    pointer-events: none;
+}
+
+/* Aktifkan klik khusus tombol video */
+.video-button-wrapper,
+.video-btn {
+    pointer-events: auto;
+}
+
